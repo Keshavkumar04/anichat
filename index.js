@@ -7,16 +7,9 @@
 //     origin: '*',
 //   }
 // });
-require('dotenv').config();
-const port = process.env.PORT || 3000;
-const corsOrigin = process.env.CORS_ORIGIN || '*';
-const corsMethods = process.env.CORS_METHODS || 'GET,POST';
-const corsAllowedHeaders = process.env.CORS_ALLOWED_HEADERS || 'my-custom-header';
-const corsCredentials = process.env.CORS_CREDENTIALS === 'true';
 
 
-
-const io = require('socket.io')(port, {
+const io = require('socket.io')(3000, {
   cors: {
     origin: '*',
     methods: ['GET', 'POST'],

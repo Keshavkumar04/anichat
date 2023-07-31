@@ -1,6 +1,4 @@
-// const socket = io('http://localhost:3000');
-const socket = io(); // The client will connect to the same host and port as the web page's URL
-
+const socket = io('http://localhost:3000');
 
 const form = document.querySelector('#formsubmit');
 const messageInput =  document.querySelector('#text');
