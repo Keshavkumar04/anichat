@@ -1,5 +1,5 @@
 // const socket = io('http://localhost:3000');
-const socket = io('/');
+const socket = io('https://anichat.onrender.com');
 
 const form = document.querySelector('#formsubmit');
 const messageInput =  document.querySelector('#text');
